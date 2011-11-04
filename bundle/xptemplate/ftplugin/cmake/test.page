@@ -1,0 +1,322 @@
+
+
+
+    /*  -------------"_--------------- */
+    /* "`w^"                           */
+
+
+
+"WRAPPED_TEXT
+WRAPPED_TEXT_line2"
+
+"WRAPPED_TEXT
+WRAPPED_TEXT_line2" b
+
+`"WRAPPED_TEXT
+WRAPPED_TEXT_line2"^
+
+a "WRAPPED_TEXT
+WRAPPED_TEXT_line2"
+
+
+    /*  -------------'_--------------- */
+    /* '`w^'                           */
+
+
+
+'WRAPPED_TEXT
+WRAPPED_TEXT_line2'
+
+'WRAPPED_TEXT
+WRAPPED_TEXT_line2' b
+
+`'WRAPPED_TEXT
+WRAPPED_TEXT_line2'^
+
+a 'WRAPPED_TEXT
+WRAPPED_TEXT_line2'
+
+
+    /*  -------------(_--------------- */
+    /* (`w^)                           */
+
+
+
+(WRAPPED_TEXT
+WRAPPED_TEXT_line2)
+
+(WRAPPED_TEXT
+WRAPPED_TEXT_line2) b
+
+`(WRAPPED_TEXT
+WRAPPED_TEXT_line2)^
+
+a (WRAPPED_TEXT
+WRAPPED_TEXT_line2)
+
+
+    /*  -------------<_--------------- */
+    /* <`w^>                           */
+
+
+
+<WRAPPED_TEXT
+WRAPPED_TEXT_line2>
+
+<WRAPPED_TEXT
+WRAPPED_TEXT_line2> b
+
+`<WRAPPED_TEXT
+WRAPPED_TEXT_line2>^
+
+a <WRAPPED_TEXT
+WRAPPED_TEXT_line2>
+
+
+    /*  -------------[_--------------- */
+    /* [`w^]                           */
+
+
+
+[WRAPPED_TEXT
+WRAPPED_TEXT_line2]
+
+[WRAPPED_TEXT
+WRAPPED_TEXT_line2] b
+
+`[WRAPPED_TEXT
+WRAPPED_TEXT_line2]^
+
+a [WRAPPED_TEXT
+WRAPPED_TEXT_line2]
+
+
+    /*  -------------`_--------------- */
+    /* \``w^\`                         */
+
+
+
+`WRAPPED_TEXT
+WRAPPED_TEXT_line2`
+
+`WRAPPED_TEXT
+WRAPPED_TEXT_line2` b
+
+``WRAPPED_TEXT
+WRAPPED_TEXT_line2`^
+
+a `WRAPPED_TEXT
+WRAPPED_TEXT_line2`
+
+
+    /*  -------------Author--------------- */
+    /* `$author^                           */
+
+
+
+	$author is not set, you need to set g:xptemplate_vars="$author=your_name" in .vimrc
+
+	$author is not set, you need to set g:xptemplate_vars="$author=your_name" in .vimrc b
+
+	`$author is not set, you need to set g:xptemplate_vars="$author=your_name" in .vimrc^
+
+	a $author is not set, you need to set g:xptemplate_vars="$author=your_name" in .vimrc
+
+
+    /*  -------------Email--------------- */
+    /* `$email^                           */
+
+
+
+	$email is not set, you need to set g:xptemplate_vars="$email=your_email@com" in .vimrc
+
+	$email is not set, you need to set g:xptemplate_vars="$email=your_email@com" in .vimrc b
+
+	`$email is not set, you need to set g:xptemplate_vars="$email=your_email@com" in .vimrc^
+
+	a $email is not set, you need to set g:xptemplate_vars="$email=your_email@com" in .vimrc
+
+
+    /*  -------------File--------------- */
+    /* `file()^                          */
+
+
+
+	test.page
+
+	test.page b
+
+	`test.page^
+
+	a test.page
+
+
+    /*  -------------foreach--------------- */
+    /* foreach (`varname^ `collection^)     */
+    /*     `cursor^                         */
+    /* endforeach(`varname^)                */
+
+
+
+	foreach (varname collection)
+		
+	endforeach(varname)
+
+	foreach (varname_TYPED collection_TYPED)
+		
+	endforeach(varname_TYPED) b
+
+	`foreach (varname collection)
+		
+	endforeach(varname)^
+
+	a foreach (varname collection)
+		
+	endforeach(varname)
+
+
+    /*  -------------function--------------- */
+    /* function(`funcName^ `params^)         */
+    /*     `cursor^                          */
+    /* endfunction(`funcName^)               */
+
+
+
+	function(funcName params)
+		
+	endfunction(funcName)
+
+	function(funcName_TYPED params_TYPED)
+		
+	endfunction(funcName_TYPED) b
+
+	`function(funcName params)
+		
+	endfunction(funcName)^
+
+	a function(funcName params)
+		
+	endfunction(funcName)
+
+
+    /*  -------------if--------------- */
+    /* if ( `cond^ )                   */
+    /*     `cursor^                    */
+    /* `else...{{^else( `cond^ )       */
+    /* `}}^endif( `cond^ )             */
+
+
+
+	if ( cond )
+		
+	else( cond )
+	endif( cond )
+
+	if ( cond_TYPED )
+		
+		else_TYPEDendif( cond_TYPED ) b
+
+		`if ( cond )
+			
+		else( cond )
+		endif( cond )^
+
+		a if ( cond )
+			
+		else( cond )
+		endif( cond )
+
+
+    /*  -------------macro--------------- */
+    /* macro( `macroName^ `params^ )      */
+    /*     `cursor^                       */
+    /* endmacro( `macroName^ )            */
+
+
+
+	macro( macroName params )
+		
+	endmacro( macroName )
+
+	macro( macroName_TYPED params_TYPED )
+		
+	endmacro( macroName_TYPED ) b
+
+	`macro( macroName params )
+		
+	endmacro( macroName )^
+
+	a macro( macroName params )
+		
+	endmacro( macroName )
+
+
+    /*  -------------msg--------------- */
+    /* message("`cursor^")              */
+
+
+
+	message("")
+
+	message("") b
+
+	`message("")^
+
+	a message("")
+
+
+    /*  -------------set--------------- */
+    /* set(`varname^ `cursor^)          */
+
+
+
+	set(varname )
+
+	set(varname_TYPED ) b
+
+	`set(varname )^
+
+	a set(varname )
+
+
+    /*  -------------while--------------- */
+    /* while( `condition^ )               */
+    /*     `cursor^                       */
+    /* enwhile( `condition^ )             */
+
+
+
+	while( condition )
+		
+	enwhile( condition )
+
+	while( condition_TYPED )
+		
+	enwhile( condition_TYPED ) b
+
+	`while( condition )
+		
+	enwhile( condition )^
+
+	a while( condition )
+		
+	enwhile( condition )
+
+
+    /*  -------------{_--------------- */
+    /* {`w^}                           */
+
+
+
+{WRAPPED_TEXT
+WRAPPED_TEXT_line2}
+
+{WRAPPED_TEXT
+WRAPPED_TEXT_line2} b
+
+`{WRAPPED_TEXT
+WRAPPED_TEXT_line2}^
+
+a {WRAPPED_TEXT
+WRAPPED_TEXT_line2}
+
